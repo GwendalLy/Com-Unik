@@ -1,5 +1,12 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../polices/Montserrat-Regular.ttf");
+}
+
+
 body {
 	margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 li {
 	list-style-type: none; 
