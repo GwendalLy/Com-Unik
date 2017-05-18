@@ -8,22 +8,22 @@ body {
 	margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
+li {
+	list-style-type: none; 
+}
+a {
+	text-decoration: none;
+	color: red;
+}
+a:hover {
+	color: red;
+	text-decoration: none;
+	border-bottom: 2px solid blue;
+}
 .menu-navigation {
 	display: flex;
+<<<<<<< HEAD
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -68,4 +68,36 @@ article {
     font-family: 'Montserrat' , sans-serif;
     font-size: 30px;
     color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+=======
+	justify-content: space-between;
+}
+.text-italic {
+	background-color: white;
+	border: 1px solid black;
+	font-size: 40px;
+	text-align: center;
+	height: 200px;
+	position: absolute;
+	top: 25%;
+}
+.row {
+	position: relative;
+}
+.titre {
+	position: absolute;
+>>>>>>> 3f886375bfbd87fd44ca2a82755a1c9823a7836b
 }
