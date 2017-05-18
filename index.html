@@ -151,8 +151,9 @@
       </article>
     </div>
   </div>
+</div>
 
-  <div class="container_fluid bg-grey">
+  <div class="container-fluid bg-grey">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -203,25 +204,23 @@
               <p class="contact-bleu">Suivez-nous</p>
               <div class="contact-red-underline"></div>
               <div class="row social">
-                <div class="facebook"></div>
-                <div class="twitter"></div>
+                <a href="http://www.google.fr" target="_blank"><div class="facebook"></div></a>
+                <a href="http://www.google.fr"><div class="twitter"></div></a>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-6">
           <form action="test.php">
-              <input type="text" placeholder="Votre nom" class="form-control" required>
-              <input type="text" placeholder="Votre e-mail" class="form-control" required>
-              <textarea name="message" placeholder="Votre message" id="message" class="form-control"></textarea>
-            <div class="row">
-              <select name="vousetes" id="vousetes" class="form-control">
+              <input type="text" placeholder="Votre nom" class="form-control form-input" required>
+              <input type="text" placeholder="Votre e-mail" class="form-control form-input" required>
+              <textarea name="message" placeholder="Votre message" id="message" class="form-textarea col-lg-12"></textarea>
+              <select name="vousetes" id="vousetes" class=" form-select col-lg-7">
                      <option value="professionnel">Professionnel</option>
                      <option value="particulier">Particulier</option>
                      <option value="association">Association</option>
-                 </select>
-                 <button class="col-lg-5 col-lg-offset-1 btn">Envoyer</button>
-            </div>
+              </select>
+              <button class="col-lg-4 col-lg-offset-1 contact-btn">Envoyer</button>
           </form>
         </div>
       </div>
