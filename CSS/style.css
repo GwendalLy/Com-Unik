@@ -85,7 +85,6 @@ h1 {
     text-align: center;
     padding-top: 4vh;
 }
-.boutonPPA{}
 
 .citation:before {
 	font-family: FontAwesome;
@@ -407,3 +406,7 @@ a:hover{
 	color: #002e5b;
 }
 
+.portfolio-img{
+    width: 100%;
+    height: auto;
+}
