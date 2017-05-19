@@ -2,8 +2,6 @@
   font-family: "Montserrat-Regular";
   src: url("../polices/Montserrat-Regular.ttf");
 }
-
-
 body {
 	margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -192,15 +190,57 @@ article {
 	position: absolute;
 	top: 25%;
 }
-.row {
-	position: relative;
-}
 .titre {
 	position: absolute;
 }
 
+<<<<<<< HEAD
 }
 */
+
+.bg-fleur{
+	background-image: url('../fleur.png');
+	width: 850px;
+	height: 489px;
+	background-repeat: no-repeat;
+	color : #ffffff;
+}
+h1 {
+	font-size: 70px;
+}
+.reset{
+	margin: 0;
+	padding: 0;	
+}
+
+.debug{
+	background-color: red;
+	height: 60vh;	
+}
+.format{
+	position: absolute;
+	width: 100%;
+	color : #ffffff;
+	height: 60vh;	
+}
+.titre{
+	position: absolute;
+	color: #ffffff;
+	margin-top: 22vh;
+}
+.citation{
+    position: absolute;
+    height: 20vh;
+    background-color: #ffffff;
+    z-index: 5;
+    width: 65%;
+    margin-top: 20vh;
+    left: 42vh;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 4vh;
+}
+.boutonPPA
 
 
 
@@ -402,3 +442,96 @@ article {
  	width: 50px;
  	height: 50px;
  }
+
+
+ .twitter:hover{
+ 	background-image: url("../images/twitterhover.png");
+ 	margin-bottom: 20px;
+ 	margin-right: 20px;
+ 	cursor: pointer;
+ 	width: 50px;
+ 	height: 50px;
+ }
+
+a{
+	border: none;
+}
+
+a:hover{
+	border: none;
+}
+
+.form-input{
+	margin-top: 30px;
+	border-radius: 0;
+	font-style: italic;
+    height: 65px;
+    border: none;
+    color: #a7a9ac;
+}
+
+.form-textarea{
+	margin-top: 30px;
+	border-radius: 0;
+	font-style: italic;
+    height: 300px;
+    border: none;
+    color: #a7a9ac;
+}
+
+.form-select{
+	display: block;
+	margin-top: 30px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #a7a9ac;
+    font-style: italic;
+	border: none;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #a7a9ac;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #a7a9ac;
+   opacity:  1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:   #a7a9ac;
+   opacity:  1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #a7a9ac;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #a7a9ac;
+}
+
+
+.contact-btn{
+	border: 2px solid grey;
+	background: none;
+	margin-top: 30px;
+	padding-left: 0;
+	padding-right: 0;
+	height: 34px;
+	color: #a7a9ac;
+	font-size: 18px;
+}
+
+.contact-btn:hover {
+	border: 2px solid #ff0064;
+	color: #002e5b;
+}
+
