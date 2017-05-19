@@ -53,11 +53,12 @@ h1 {
 }
 
 .debug{
+	background-color: red;
 	height: 60vh;
-	margin-top: 2%;
+	margin-top: 4%;
 }
 .fond-image {
-	margin-top: 2%;
+	margin-top: 4%;
 }
 .format{
 	position: absolute;
