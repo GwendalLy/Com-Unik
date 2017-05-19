@@ -36,11 +36,16 @@ h1 {
 }
 .menu-navigation {
 	display: flex;
-	justify-content: space-between;
-	padding-top: 4%;
 }
-.titre {
-	position: absolute;
+.bg-fleur{
+	background-image: url('../fleur.png');
+	width: 850px;
+	height: 489px;
+	background-repeat: no-repeat;
+	color : #ffffff;
+}
+h1 {
+	font-size: 70px;
 }
 .reset{
 	margin: 0;
@@ -106,6 +111,166 @@ h1 {
 	color: #5b6574;
 	font-size: 30px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Samuel*/
+h2 {
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 80px;
+    color: black;
+    margin-top: 50px;
+}
+
+article {
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 30px;
+    color: black;
+}
+
+.tiret {
+    font-family: 'Montserrat';
+    font-size: 82px; 
+    color: #ff0064; 
+}
+
+.paraprofessionnels {
+    background-color: white;
+}
+
+.paraparticuliers {
+    background-color: white;
+}
+
+.paraassociations {
+    background-color: white;
+    position: absolute;
+    top: 80%;
+    right: 65px;
+    z-index: 1;
+}
+
+.zebra {
+    position: absolute;
+    z-index: -1;
+    left: -9%;
+    top: 367px;
+}
+
+.sand {
+    position: absolute;
+    z-index: -1;
+    left: -9%;
+    top: 367px;
+}
+
+.container.marginCont {
+    margin-bottom: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -306,6 +471,7 @@ h1 {
  	height: 50px;
  }
 
+
  .twitter:hover{
  	background-image: url("../images/twitterhover.png");
  	margin-bottom: 20px;
@@ -396,3 +562,4 @@ a:hover{
 	border: 2px solid #ff0064;
 	color: #002e5b;
 }
+
