@@ -406,13 +406,40 @@ a:hover{
 	color: #002e5b;
 }
 
-.portfolio-img{
+.responsive-img{
     width: 100%;
     height: auto;
 }
 
 
 @media (max-width: 1200px){
+    
+    .titreDroit{
+        margin-left: 0;
+        padding-bottom: 0;
+    }
+    
+    .zebra{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    
+    .sand{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    
+    .paraassociations{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    .container.marginCont{
+        margin-bottom: 50px;
+    }
+    
     .contact-responsive{
         text-align: center;
     }
@@ -425,4 +452,7 @@ a:hover{
         justify-content: center;
     }
     
+    .contact-btn{
+        margin-bottom: 50px;
+    }
 }
