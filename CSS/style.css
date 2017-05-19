@@ -136,18 +136,24 @@ article {
 
 .paraprofessionnels {
     background-color: white;
+    padding-bottom: 24px;
+        line-height: 35px;
 }
 
 .paraparticuliers {
     background-color: white;
+        line-height: 35px;
 }
 
 .paraassociations {
     background-color: white;
     position: absolute;
     top: 80%;
-    right: 65px;
+    right: 23px;
     z-index: 1;
+    padding-left: 50px;
+    padding-top: 24px;
+        line-height: 35px;
 }
 
 .zebra {
@@ -161,7 +167,7 @@ article {
     position: absolute;
     z-index: -1;
     left: -9%;
-    top: 367px;
+    top: -406px;
 }
 
 .container.marginCont {
