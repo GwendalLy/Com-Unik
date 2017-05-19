@@ -36,6 +36,8 @@ h1 {
 }
 .menu-navigation {
 	display: flex;
+	padding-top: 4%;
+	justify-content: space-between;
 }
 .bg-fleur{
 	background-image: url('../fleur.png');
@@ -51,14 +53,12 @@ h1 {
 	margin: 0;
 	padding: 0;	
 }
-
 .debug{
-	background-color: red;
 	height: 60vh;
-	margin-top: 4%;
+	margin-top: 2%;
 }
 .fond-image {
-	margin-top: 4%;
+	margin-top: 2%;
 }
 .format{
 	position: absolute;
