@@ -410,3 +410,19 @@ a:hover{
     width: 100%;
     height: auto;
 }
+
+
+@media (max-width: 1200px){
+    .contact-responsive{
+        text-align: center;
+    }
+    
+    .contact-red-underline{
+        margin: 10px auto 20px auto;
+    }
+    
+    .social{
+        justify-content: center;
+    }
+    
+}
