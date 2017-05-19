@@ -233,7 +233,7 @@ article {
  	background-color: white;
     position: relative;
     top: -100px;
-    width: 365px;
+    width: 100%;
     padding: 20px;
     opacity: 0.8;
  }
