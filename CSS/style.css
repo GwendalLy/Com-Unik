@@ -209,6 +209,7 @@ h2 {
     font-size: 80px;
     color: black;
     margin-top: 50px;
+    margin-bottom: 0;
 }
 
 article {
@@ -217,21 +218,33 @@ article {
     color: black;
 }
 
+.rowtitre {
+    padding-top: 80px;
+}
+
 .tiret {
     font-family: 'Montserrat';
     font-size: 82px; 
-    color: #ff0064; 
+    color: #ff0064;
+}
+
+.tiretdroit {
+    font-family: 'Montserrat';
+    font-size: 82px; 
+    color: #ff0064;
+    padding-left: 409px;
 }
 
 .paraprofessionnels {
     background-color: white;
     padding-bottom: 24px;
-        line-height: 35px;
+    line-height: 35px;
 }
 
 .paraparticuliers {
     background-color: white;
-        line-height: 35px;
+    line-height: 35px;
+    padding-top: 24px;
 }
 
 .paraassociations {
@@ -242,14 +255,14 @@ article {
     z-index: 1;
     padding-left: 50px;
     padding-top: 24px;
-        line-height: 35px;
+    line-height: 35px;
 }
 
 .zebra {
     position: absolute;
     z-index: -1;
     left: -9%;
-    top: 367px;
+    top: 313px;
 }
 
 .sand {
@@ -260,7 +273,18 @@ article {
 }
 
 .container.marginCont {
-    margin-bottom: 500px;
+    padding-bottom: 85px;
+    margin-bottom: 480px;
+}
+
+.container.marginCont2 {
+    padding-bottom: 85px;
+    margin-bottom: 80px;
+}
+
+.titreDroit {
+    margin-left: 720px;
+    padding-bottom: 436px;
 }
 
 
