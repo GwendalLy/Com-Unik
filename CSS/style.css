@@ -2,8 +2,6 @@
   font-family: "Montserrat-Regular";
   src: url("../polices/Montserrat-Regular.ttf");
 }
-
-
 body {
 	margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -33,9 +31,49 @@ a:hover {
 	position: absolute;
 	top: 25%;
 }
-.row {
-	position: relative;
-}
 .titre {
 	position: absolute;
 }
+.bg-fleur{
+	background-image: url('../fleur.png');
+	width: 850px;
+	height: 489px;
+	background-repeat: no-repeat;
+	color : #ffffff;
+}
+h1 {
+	font-size: 70px;
+}
+.reset{
+	margin: 0;
+	padding: 0;	
+}
+
+.debug{
+	background-color: red;
+	height: 60vh;	
+}
+.format{
+	position: absolute;
+	width: 100%;
+	color : #ffffff;
+	height: 60vh;	
+}
+.titre{
+	position: absolute;
+	color: #ffffff;
+	margin-top: 22vh;
+}
+.citation{
+    position: absolute;
+    height: 20vh;
+    background-color: #ffffff;
+    z-index: 5;
+    width: 65%;
+    margin-top: 20vh;
+    left: 42vh;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 4vh;
+}
+.boutonPPA
