@@ -34,6 +34,7 @@ a:hover {
 .titre {
 	position: absolute;
 }
+
 .bg-fleur{
 	background-image: url('../fleur.png');
 	width: 850px;
@@ -77,3 +78,294 @@ h1 {
     padding-top: 4vh;
 }
 .boutonPPA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PARTIE DE MARINE */
+ h3{
+ 	text-align: center;
+ 	color: #ff0064;
+ 	font-weight: 600;
+ 	font-size: 55px;
+	margin: 50px auto 50px auto;
+ }
+
+ .h3-underline{
+ 	width: 50px;
+ 	height: 10px;
+ 	margin: auto;
+ 	border-radius: 10px;
+ 	background-color: #002e5b;
+ 	position: relative;
+    top: -35px;
+    margin-bottom: 60px;
+ }
+
+ .portfolio-bg{
+ 	background-color: white;
+    position: relative;
+    top: -100px;
+    width: 365px;
+    padding: 20px;
+    opacity: 0.8;
+ }
+
+ h4{
+ 	opacity: 1;
+ 	font-weight: 600;
+ 	color: #002e5b;
+ 	margin-top: 0;
+ }
+
+ .h4-underline{
+    width: 25px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #ff0064;
+    margin: 0 10px 10px;
+ }
+
+ .portfolio-p{
+ 	font-style: italic;
+ }
+
+ .bg-grey{
+ 	background-color: #f2f2f2;
+ }
+
+ .contact-bleu{
+ 	color: #002e5b;
+ }
+
+ .contact-bold{
+ 	font-weight: 800;
+ }
+
+ .contact-margin{
+ 	margin-bottom: 30px;
+ }
+
+ .contact-red-underline{
+ 	width: 15px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #ff0064;
+    margin: 0 10px 10px;
+ }
+
+ .social{
+ 	display: flex;
+ 	padding-left: 15px;
+ }
+
+ .facebook{
+ 	background-image: url("../images/facebook.png");
+ 	margin-bottom: 20px;
+ 	margin-right: 20px;
+ 	cursor: pointer;
+ 	width: 50px;
+ 	height: 50px;
+ }
+
+ .facebook:hover{
+ 	background-image: url("../images/facebookhover.png");
+ 	margin-bottom: 20px;
+ 	margin-right: 20px;
+ 	cursor: pointer;
+ 	width: 50px;
+ 	height: 50px;
+ }
+
+ .twitter{
+ 	background-image: url("../images/twitter.png");
+ 	margin-bottom: 20px;
+ 	margin-right: 20px;
+ 	cursor: pointer;
+ 	width: 50px;
+ 	height: 50px;
+ }
+
+ .twitter:hover{
+ 	background-image: url("../images/twitterhover.png");
+ 	margin-bottom: 20px;
+ 	margin-right: 20px;
+ 	cursor: pointer;
+ 	width: 50px;
+ 	height: 50px;
+ }
+
+a{
+	border: none;
+}
+
+a:hover{
+	border: none;
+}
+
+.form-input{
+	margin-top: 30px;
+	border-radius: 0;
+	font-style: italic;
+    height: 65px;
+    border: none;
+    color: #a7a9ac;
+}
+
+.form-textarea{
+	margin-top: 30px;
+	border-radius: 0;
+	font-style: italic;
+    height: 300px;
+    border: none;
+    color: #a7a9ac;
+}
+
+.form-select{
+	display: block;
+	margin-top: 30px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #a7a9ac;
+    font-style: italic;
+	border: none;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #a7a9ac;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #a7a9ac;
+   opacity:  1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:   #a7a9ac;
+   opacity:  1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #a7a9ac;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #a7a9ac;
+}
+
+
+.contact-btn{
+	border: 2px solid grey;
+	background: none;
+	margin-top: 30px;
+	padding-left: 0;
+	padding-right: 0;
+	height: 34px;
+	color: #a7a9ac;
+	font-size: 18px;
+}
+
+.contact-btn:hover {
+	border: 2px solid #ff0064;
+	color: #002e5b;
+}
