@@ -1,6 +1,12 @@
 @font-face {
   font-family: "Montserrat-Regular";
   src: url("../polices/Montserrat-Regular.ttf");
+  font-family: "Montserrat-Italic";
+  src: url("../polices/Montserrat-Italic.ttf");
+  font-family: "Montserrat-SemiBold";
+  src: url("../polices/Montserrat-SemiBold.ttf");
+  font-family: "Montserrat-Medium";
+  src: url("../polices/Montserrat-Medium.ttf");
 }
 body {
 	margin: 0;
@@ -9,32 +15,28 @@ body {
 li {
 	list-style-type: none; 
 }
-a {
-	text-decoration: none;
-	color: red;
+h1 {
+	font-size: 70px;
 }
-a:hover {
-	color: red;
+.liens-nav {
+	font-family: "Montserrat-Medium";
+	font-size: 18px;
+	text-decoration: none;
+	color: #ff0064;
+}
+.liens-nav:hover {
+	color: #ff0064;
 	text-decoration: none;
 	border-bottom: 2px solid blue;
 }
+.leLogo {
+	padding-top: 2%;
+	padding-left: 2%;
+	position: absolute;
+}
 .menu-navigation {
 	display: flex;
-	justify-content: space-between;
 }
-.text-italic {
-	background-color: white;
-	border: 1px solid black;
-	font-size: 40px;
-	text-align: center;
-	height: 200px;
-	position: absolute;
-	top: 25%;
-}
-.titre {
-	position: absolute;
-}
-
 .bg-fleur{
 	background-image: url('../fleur.png');
 	width: 850px;
@@ -51,14 +53,17 @@ h1 {
 }
 
 .debug{
-	background-color: red;
-	height: 60vh;	
+	height: 60vh;
+	margin-top: 2%;
+}
+.fond-image {
+	margin-top: 2%;
 }
 .format{
 	position: absolute;
 	width: 100%;
 	color : #ffffff;
-	height: 60vh;	
+	height: 60vh;
 }
 .titre{
 	position: absolute;
@@ -66,6 +71,7 @@ h1 {
 	margin-top: 22vh;
 }
 .citation{
+	font-family: "Montserrat-Italic", sans-serif;
     position: absolute;
     height: 20vh;
     background-color: #ffffff;
@@ -73,12 +79,40 @@ h1 {
     width: 65%;
     margin-top: 20vh;
     left: 42vh;
-    font-size: 40px;
+    color: #5b6574;
+    font-size: 35px;
     text-align: center;
     padding-top: 4vh;
 }
 .boutonPPA{}
 
+.citation:before {
+	font-family: FontAwesome;
+	content: "\f10d";
+	position: absolute;
+	font-size: 50px;
+    left: 4%;
+    top: 2%;
+}
+.boutonPPA {
+	background-color: white;
+	box-shadow: 11px 11px 1px #5b6574;
+	margin-top: 4%;
+    margin-bottom: 4%;
+}
+.boutonPPA:hover {
+	background-color: #acb6c1;
+}
+.liensPPA {
+	text-decoration: none;
+	color: #5b6574;
+	font-size: 30px;
+}
+.liensPPA:hover {
+	text-decoration: none;
+	color: #5b6574;
+	font-size: 30px;
+}
 
 
 
@@ -146,6 +180,83 @@ h1 {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Samuel*/
+h2 {
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 80px;
+    color: black;
+    margin-top: 50px;
+}
+
+article {
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 30px;
+    color: black;
+}
+
+.tiret {
+    font-family: 'Montserrat';
+    font-size: 82px; 
+    color: #ff0064; 
+}
+
+.paraprofessionnels {
+    background-color: white;
+}
+
+.paraparticuliers {
+    background-color: white;
+}
+
+.paraassociations {
+    background-color: white;
+    position: absolute;
+    top: 80%;
+    right: 65px;
+    z-index: 1;
+}
+
+.zebra {
+    position: absolute;
+    z-index: -1;
+    left: -9%;
+    top: 367px;
+}
+
+.sand {
+    position: absolute;
+    z-index: -1;
+    left: -9%;
+    top: 367px;
+}
+
+.container.marginCont {
+    margin-bottom: 500px;
+}
 
 
 
@@ -361,6 +472,7 @@ h1 {
  	height: 50px;
  }
 
+
  .twitter:hover{
  	background-image: url("../images/twitterhover.png");
  	margin-bottom: 20px;
@@ -451,3 +563,4 @@ a:hover{
 	border: 2px solid #ff0064;
 	color: #002e5b;
 }
+
