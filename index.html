@@ -220,9 +220,9 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <form action="test.php">
-              <input type="text" placeholder="Votre nom" class="form-control form-input" required>
-              <input type="text" placeholder="Votre e-mail" class="form-control form-input" required>
+          <form action="php/contact.php" method="GET">
+              <input type="text" name="nom" placeholder="Votre nom" class="form-control form-input"> 
+              <input type="text" name="email" placeholder="Votre e-mail" class="form-control form-input"> 
               <textarea name="message" placeholder="Votre message" id="message" class="form-textarea col-lg-12 col-xs-12"></textarea>
               <select name="vousetes" id="vousetes" class=" form-select col-lg-7 col-xs-12">
                      <option value="professionnel">Professionnel</option>
