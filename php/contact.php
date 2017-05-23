@@ -2,6 +2,9 @@
 
 
     $error = array( );
+    $vousetes = $_GET['vousetes'];
+
+
 
     if (empty($_GET["nom"])) {
 
@@ -43,8 +46,18 @@
 
     }
 
-    if ($error['name'] = true && $error['email'] = true && $error['message'] = true){
+    if ($error['name'] == true && $error['email'] == true && $error['message'] == true){
+
+           $to      = 'marinebelin.39@gmail.com';
+           $subject = 'mail from'. $_GET["nom"];
+           $message =  $_GET["message"] . "\r \n" . 'from'. $_GET["email"];
+           $headers = 'From: webmaster@example.com' . "\r\n" .
+           'Reply-To: webmaster@example.com' . "\r\n" .
+           'X-Mailer: PHP/' . phpversion();
+
+/*           mail($to, $subject, $message, $headers);*/       // Cette fonction ne marche que si le serveur est configuré pour
       
+
     } 
 
 
