@@ -258,6 +258,10 @@ article {
     font-size: 18px;
  }
 
+ .portfolio-hover{
+    cursor: pointer;
+ }
+
  .bg-grey{
  	background-color: #f2f2f2;
  }

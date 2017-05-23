@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css">
 </head>
 <body>
 
@@ -134,7 +135,7 @@
       </div>
     </div>
     <div class="row">
-      <article class="col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+      <article class="col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 portfolio-hover" id="particuliers" data-toggle="modal" data-target="#myModal">
         <div><img src="images/portfolio1.jpg" alt="Présentation du premier projet : rayures zébrées" width="365" height="365" class="responsive-img"></div>
         <div class="portfolio-bg">
           <h4>PARTICULIERS</h4>
@@ -142,7 +143,8 @@
           <p class="portfolio-p">WEBDESIGN</p>
         </div>
       </article>
-      <article class="col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+
+      <article class="col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 portfolio-hover" id="professionnels" data-toggle="modal" data-target="#myModal">
         <div><img src="images/portfolio2.jpg" alt="Présentation du premier projet : végétation" width="365" height="365" class="responsive-img"></div>
         <div class="portfolio-bg">
           <h4>PROFESSIONNELS</h4>
@@ -151,7 +153,7 @@
         </div>
       </article>
 
-      <article class="col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+      <article class="col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 portfolio-hover" id="associations" data-toggle="modal" data-target="#myModal">
         <div><img src="images/portfolio3.jpg" alt="Présentation du premier projet : dune de sable" width="365" height="365" class="responsive-img"></div>
         <div class="portfolio-bg">
           <h4>ASSOCIATIONS</h4>
@@ -159,6 +161,25 @@
           <p class="portfolio-p">GRAPHIC DESIGN</p>
         </div>
       </article>
+
+<!-- DEBUT MODAL -->
+      <div class="modal fade" data-backdrop="static" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+             <button type="button" class="btn btn-default close-modal" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+              <h4 class="modal-title" id="myModalLabel"></h4>
+            </div>
+            <div class="modal-body">
+              
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-default close-modal" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- FIN MODAL -->
     </div>
   </div>
 
@@ -243,6 +264,8 @@
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
 
+    <script src="js/bootstrap.min.js"></script>
+
   <script>
       $("#idForm").submit(function(e) {
         
@@ -252,15 +275,15 @@
         var email = $('#email').val();
         var message = $('#message').val();
 
-      var adresse = "http://comunik/php/contact.php?nom=" + name + "&email="+ email + "&message=" + message; // the script where you handle the form input.
+      /*var adresse = "http://vesoul.codeur.online/front/bmarine?nom=" + name + "&email="+ email + "&message=" + message; // the script where you handle the form input.*/
 
       $.ajax({
              type: "GET",
-             url: adresse,
+             url: "php/contact.php",
              data: $("#idForm").serialize(), // serializes the form's elements.
              success: function(data)
              {
-                 data = jQuery.parseJSON(data); // show response from the php script.
+                 /*data = jQuery.parseJSON(data);*/ // show response from the php script.
                  console.log(data);
 
                  if(data.name == true && data.email == true && data.message == true){
@@ -287,6 +310,42 @@
 
           e.preventDefault(); // avoid to execute the actual submit of the form.
       });
+
+      $('.portfolio-hover').on('click', function () {
+        
+          var id = this.id;
+          var url = "lightbox.php?id=" + id;
+
+
+
+          $.ajax({
+              type: "GET",
+              url: url,
+
+              success: function(data) {
+                data = JSON.parse(data);
+                console.log(data);
+
+                for(i=0; i<data.length ; i++){
+                  $('.modal-footer').append("<p class='modal-to-suppr'><img class='col-lg-3' src='http://vesoul.codeur.online/front/bmarine/"+ data[i] +"'></p>");
+
+                }
+                 $('.modal-title').append("<h5 class='modal-to-suppr'>"+ id + "</h5>");
+                
+
+              },
+              error: function(error, txtStatus) {
+                console.log(txtStatus);
+                console.log('error');
+              }
+
+          });
+      });
+
+      $('.close-modal').on('click', function(){
+        $( ".modal-to-suppr").remove();
+      })
+
   </script>
 </body>
 </html>
