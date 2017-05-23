@@ -220,9 +220,10 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <form action="php/contact.php" method="GET">
-              <input type="text" name="nom" placeholder="Votre nom" class="form-control form-input"> 
-              <input type="text" name="email" placeholder="Votre e-mail" class="form-control form-input"> 
+          <form action="php/contact.php" id="idForm">
+              <p class="hidden reponse"> Votre message a bien été envoyé. </p>
+              <input type="text" id="name" name="nom" placeholder="Votre nom" class="form-control form-input"> 
+              <input type="text" id="email" name="email" placeholder="Votre e-mail" class="form-control form-input"> 
               <textarea name="message" placeholder="Votre message" id="message" class="form-textarea col-lg-12 col-xs-12"></textarea>
               <select name="vousetes" id="vousetes" class=" form-select col-lg-7 col-xs-12">
                      <option value="professionnel">Professionnel</option>
@@ -235,5 +236,57 @@
       </div>
     </div>
   </div>
+
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+  <script>
+      $("#idForm").submit(function(e) {
+        
+
+
+        var name = $('#name').val();
+        var email = $('#email').val();
+        var message = $('#message').val();
+
+      var adresse = "http://comunik/php/contact.php?nom=" + name + "&email="+ email + "&message=" + message; // the script where you handle the form input.
+
+      $.ajax({
+             type: "GET",
+             url: adresse,
+             data: $("#idForm").serialize(), // serializes the form's elements.
+             success: function(data)
+             {
+                 data = jQuery.parseJSON(data); // show response from the php script.
+                 console.log(data);
+
+                 if(data.name == true && data.email == true && data.message == true){
+                    console.log('ok');
+                    $('#name').css({'border': 'none'});
+                    $('#email').css({'border': 'none'});
+                    $('#message').css({'border': 'none'});
+                    $('.reponse').addClass('bg-success');
+                    $('.reponse').removeClass('hidden');
+
+                 } else {
+                   if(data.name == false){
+                      $('#name').css({'border': ' #ff0064 solid 1px'})
+                   }
+                   if(data.email == false){
+                      $('#email').css({'border': ' #ff0064 solid 1px'})
+                   }
+                   if(data.message == false){
+                      $('#message').css({'border': ' #ff0064 solid 1px'})
+                   }
+                  }
+             }
+           });
+
+          e.preventDefault(); // avoid to execute the actual submit of the form.
+      });
+  </script>
 </body>
 </html>

@@ -411,6 +411,10 @@ a:hover{
     height: auto;
 }
 
+.hidden{
+    display: none;
+}
+
 @media (max-width: 1470px){
 	.citation {
 		font-size: 30px;
