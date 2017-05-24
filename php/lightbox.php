@@ -1,11 +1,8 @@
 <?php
 
-$id = $_GET['id'];
+$images = glob("images/particulier/{*.jpg,*.gif,*.png}", GLOB_BRACE);
+print_r($images);
 
-$images = glob("images/".$id."/{*.jpg,*.gif,*.png}", GLOB_BRACE);
-
-
-echo json_encode($images);
 
 
 ?>
