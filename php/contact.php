@@ -50,6 +50,43 @@
 
     if ($error['name'] == true && $error['email'] == true && $error['message'] == true){
 
+        $servername = "localhost";
+        $username = "bmarine";
+        $password = "bmarine@2017";
+        $dbname = "bmarine";
+
+        try {
+            $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+            // set the PDO error mode to exception
+            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+            // prepare sql and bind parameters
+            $stmt = $conn->prepare("INSERT INTO contact (name, email, message, category) 
+            VALUES (:name, :email, :message, :category)");  
+            $stmt->bindParam(':name', $name);
+            $stmt->bindParam(':email', $email);
+            $stmt->bindParam(':message', $message);
+            $stmt->bindParam(':category', $category);
+
+            // insert a row
+            $name = $_GET["nom"];
+            $email = $_GET["email"];
+            $message = $_GET["message"];
+            $category = $_GET["vousetes"];
+            $stmt->execute();
+
+            
+            $error["bdd"] = "New records created successfully";
+            }
+
+        catch(PDOException $e)
+            {
+             $error["bdd"] =  "Error: " . $e->getMessage();
+            }
+        $conn = null;
+
+
+
          require '../vendor/phpmailer/phpmailer/PHPMailerAutoload.php'; 
 
 

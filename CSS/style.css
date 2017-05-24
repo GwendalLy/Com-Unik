@@ -262,6 +262,10 @@ article {
     cursor: pointer;
  }
 
+.zoom{
+    cursor: pointer;
+}
+
  .bg-grey{
  	background-color: #f2f2f2;
  }

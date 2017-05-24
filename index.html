@@ -171,7 +171,7 @@
               <h4 class="modal-title" id="myModalLabel"></h4>
             </div>
             <div class="modal-body">
-              
+               
             </div>
             <div class="modal-footer">
               <!-- <button type="button" class="btn btn-default close-modal" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button> -->
@@ -283,7 +283,7 @@
              data: $("#idForm").serialize(), // serializes the form's elements.
              success: function(data)
              {
-                 /*data = jQuery.parseJSON(data);*/ // show response from the php script.
+                 data = jQuery.parseJSON(data); // show response from the php script.
                  console.log(data);
 
                  if(data.name == true && data.email == true && data.message == true){
@@ -311,6 +311,8 @@
           e.preventDefault(); // avoid to execute the actual submit of the form.
       });
 
+      // LIGHTBOX 
+
       $('.portfolio-hover').on('click', function () {
         
           var id = this.id;
@@ -327,11 +329,21 @@
                 console.log(data);
 
                 for(i=0; i<data.length ; i++){
-                  $('.modal-footer').append("<p class='modal-to-suppr'><img class='col-lg-3' src='http://vesoul.codeur.online/front/bmarine/"+ data[i] +"'></p>");
+                  $('.modal-footer').append("<p class='modal-to-suppr zoom'><img class='col-lg-3 vignette' src='http://vesoul.codeur.online/front/bmarine/"+ data[i] +"'></p>");
 
                 }
                  $('.modal-title').append("<h5 class='modal-to-suppr'>"+ id + "</h5>");
                 
+
+              $('.vignette').on('click', function(){
+                  vignette = $(this).attr('src');
+                  $('.modal-body').append("<p class='modal-to-suppr'><img class='image-lightbox' src="+vignette+"></p>");     
+                  console.log('click ok');
+
+                  if($('.image-lightbox').attr('src') != vignette){
+                      $('.image-lightbox').remove();
+                  } 
+              });
 
               },
               error: function(error, txtStatus) {
@@ -340,11 +352,13 @@
               }
 
           });
+
+
       });
 
       $('.close-modal').on('click', function(){
         $( ".modal-to-suppr").remove();
-      })
+      });
 
   </script>
 </body>
