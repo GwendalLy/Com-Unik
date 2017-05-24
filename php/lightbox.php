@@ -1,8 +1,11 @@
 <?php
 
-$images = glob("images/particulier/{*.jpg,*.gif,*.png}", GLOB_BRACE);
-print_r($images);
+$id = $_GET['id'];
 
+$images = glob("bmarine/images/".$id."/{*.jpg,*.gif,*.png}", GLOB_BRACE);
+
+echo realpath("");
+echo json_encode($images);
 
 
 ?>
